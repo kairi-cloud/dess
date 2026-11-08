@@ -3,44 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESSCUP — Турнир</title>
+    <title>FUTURA — Дизайн-студия</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Подключаем шрифты Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Подключаем мощные шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Шапка -->
-    <header class="navbar">
-        <div class="logo">
-            <span class="star">✦</span> DESSCUP
-        </div>
-        <nav class="nav-links">
-            <a href="#">Регистрация</a>
-            <a href="#">FAQ</a>
-            <a href="#">Регламент</a>
+    <header class="header">
+        <div class="logo">FUTURA<span>*</span> <small>design studio</small></div>
+        <nav class="nav">
+            <a href="#">О студии</a>
+            <a href="#">Услуги</a>
+            <a href="#">Проекты</a>
+            <a href="#">Процесс</a>
+            <a href="#">Контакты</a>
         </nav>
+        <button class="btn-outline">Обсудить проект</button>
     </header>
 
     <!-- Главный блок (Hero) -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>УЧАСТВУЙ В ТЕСТОВОМ<br><span class="highlight">ТУРНИРЕ</span></h1>
-            <p class="subtitle">| Веселись. Играй. Побеждай.</p>
-            <button class="btn-glow">Зарегистрироваться <span>→</span></button>
+        <div class="hero-left">
+            <span class="index-num">01</span>
+            <h1>
+                СОЗДАЁМ ДИЗАЙН,<br>
+                <span class="green">КОТОРЫЙ</span><br>
+                НЕВОЗМОЖНО<br>
+                <span class="pink">ПРОЛИСТАТЬ</span>
+            </h1>
+            <p class="hero-desc">Мы объединяем стратегию, креатив и технологии, чтобы бренды выделялись, запоминались и вызывали эмоции. 🚀</p>
+            <div class="hero-buttons">
+                <button class="btn-green">Обсудить проект <span>↗</span></button>
+                <button class="btn-text">Смотреть кейсы <span>→</span></button>
+            </div>
         </div>
-        <div class="hero-image">
-            <!-- Сюда можно вставить картинку кота. Пока используем заглушку -->
-            <div class="placeholder-img">🐱 (Картинка кота)</div>
+        <div class="hero-right">
+            <!-- Заглушка под 3D-объект -->
+            <div class="3d-orb-placeholder">
+                <div class="orb-glow"></div>
+                <span>3D OBJECT</span>
+            </div>
         </div>
     </section>
 
-    <!-- Блок с джойстиком -->
-    <section class="tournament">
-        <div class="tournament-text">
-            <p>Регистрация на турнир 5x5</p>
-            <h2>ГОТОВЫ К БОЮ?</h2>
+    <!-- =========================================
+         БЕГУЩАЯ СТРОКА №1 (Разделитель)
+         ========================================= -->
+    <div class="marquee marquee-dark">
+        <div class="marquee-content">
+            <span>STRATEGY</span><span class="dot">✦</span>
+            <span>BRANDING</span><span class="dot">✦</span>
+            <span>WEB DESIGN</span><span class="dot">✦</span>
+            <span>SMM</span><span class="dot">✦</span>
+            <span>MOTION</span><span class="dot">✦</span>
+            <!-- Дубликат для плавности -->
+            <span>STRATEGY</span><span class="dot">✦</span>
+            <span>BRANDING</span><span class="dot">✦</span>
+            <span>WEB DESIGN</span><span class="dot">✦</span>
+            <span>SMM</span><span class="dot">✦</span>
+            <span>MOTION</span><span class="dot">✦</span>
         </div>
-        <div class="controller-icon">🎮</div>
+    </div>
+
+    <!-- Зеленый блок "Что мы делаем" -->
+    <section class="services">
+        <div class="services-header">
+            <span class="index-num">02</span>
+            <h2>ЧТО МЫ ДЕЛАЕМ</h2>
+            <p>Разрабатываем визуальные решения, которые помогают брендам привлекать внимание, выстраивать коммуникацию и достигать целей.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-top">
+                    <span>01</span>
+                    <span class="icon">✧</span>
+                </div>
+                <h3>ВЕБ-ДИЗАЙН</h3>
+                <p>Создаем сайты, которые не только говорят о бренде, но и решают бизнес-задачи.</p>
+                <div class="card-img" style="background: #5a189a;"></div>
+                <button class="card-btn">↗</button>
+            </div>
+            <div class="service-card">
+                <div class="card-top">
+                    <span>02</span>
+                    <span class="icon">✧</span>
+                </div>
+                <h3>БРЕНДИНГ</h3>
+                <p>Разрабатываем айдентику и стратегию бренда, которые запоминаются надолго.</p>
+                <div class="card-img" style="background: #000;"></div>
+                <button class="card-btn">↗</button>
+            </div>
+            <div class="service-card">
+                <div class="card-top">
+                    <span>03</span>
+                    <span class="icon">✧</span>
+                </div>
+                <h3>ДИЗАЙН ДЛЯ СОЦСЕТЕЙ</h3>
+                <p>Делаем контент, который останавливает скролл и вовлекает аудиторию.</p>
+                <div class="card-img" style="background: #ff00ff;"></div>
+                <button class="card-btn">↗</button>
+            </div>
+            <div class="service-card">
+                <div class="card-top">
+                    <span>04</span>
+                    <span class="icon">✧</span>
+                </div>
+                <h3>ПРЕЗЕНТАЦИИ</h3>
+                <p>Создаем понятные и убедительные презентации, которые продают идеи.</p>
+                <div class="card-img" style="background: #333;"></div>
+                <button class="card-btn">↗</button>
+            </div>
+        </div>
     </section>
+
+    <!-- =========================================
+         БЕГУЩАЯ СТРОКА №2 (Зеленая, перед проектами)
+         ========================================= -->
+    <div class="marquee marquee-green">
+        <div class="marquee-content reverse">
+            <span>СДЕЛАЕМ КРУТО</span><span class="dot">✦</span>
+            <span>CREATIVE STUDIO</span><span class="dot">✦</span>
+            <span>СДЕЛАЕМ КРУТО</span><span class="dot">✦</span>
+            <span>CREATIVE STUDIO</span><span class="dot">✦</span>
+            <!-- Дубликат -->
+            <span>СДЕЛАЕМ КРУТО</span><span class="dot">✦</span>
+            <span>CREATIVE STUDIO</span><span class="dot">✦</span>
+            <span>СДЕЛАЕМ КРУТО</span><span class="dot">✦</span>
+            <span>CREATIVE STUDIO</span><span class="dot">✦</span>
+        </div>
+    </div>
+
+    <!-- Блок с проектами -->
+    <section class="projects">
+        <div class="projects-header">
+            <div class="left">
+                <span class="index-num">03</span>
+                <h2>ПРОЕКТЫ,<br>КОТОРЫМИ<br><span class="pink">МЫ ГОРДИМСЯ</span></h2>
+            </div>
+            <div class="right">
+                <p>Каждый проект — это сотрудничество, поиск решений и результат, которым мы и наши клиенты действительно гордимся.</p>
+                <button class="btn-outline-light">Смотреть все проекты <span>↗</span></button>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Проект 1 -->
+            <div class="project-card" style="background: #111; color: #fff;">
+                <div class="project-info">
+                    <span>ВЕБ-САЙТ ДЛЯ ОНЛАЙН-ПЛАТФОРМЫ</span>
+                    <h3>ELEVATE</h3>
+                </div>
+                <div class="project-tags">
+                    <span>UI/UX</span>
+                    <span>WEB DESIGN</span>
+                </div>
+            </div>
+            <!-- Проект 2 -->
+            <div class="project-card" style="background: #e0dcd3; color: #000;">
+                <div class="project-info">
+                    <span>БРЕНДИНГ И УПАКОВКА</span>
+                    <h3>NÜVA</h3>
+                </div>
+                <div class="project-tags">
+                    <span>BRANDING</span>
+                    <span>PACKAGING</span>
+                </div>
+            </div>
+            <!-- Проект 3 -->
+            <div class="project-card" style="background: #000; color: #fff;">
+                <div class="project-info">
+                    <span>ДИЗАЙН ДЛЯ СОЦСЕТЕЙ</span>
+                    <h3>URBN</h3>
+                </div>
+                <div class="project-tags">
+                    <span>SMM</span>
+                    <span>CONTENT DESIGN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
